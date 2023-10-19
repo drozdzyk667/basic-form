@@ -17,10 +17,10 @@ if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
-To first time build, you will have to run:
-## `npm install` 
+For first time build, you will have to use following commands:
+#### `npm install` 
 and then
-## `npm start`
+#### `npm start`
 
 Project runs with:
 - react v18.2.0
