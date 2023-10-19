@@ -17,6 +17,11 @@ if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
+To first time build, you will have to run:
+## `npm install` 
+and then
+## `npm start`
+
 Project runs with:
 - react v18.2.0
 - typescript v4.9.5
