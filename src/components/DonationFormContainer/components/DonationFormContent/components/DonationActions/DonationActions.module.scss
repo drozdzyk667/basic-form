@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&family=Rubik:wght@500&display=swap');
+
+.rootContainer {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    .inputWrapper {
+        display: grid;
+        gap: 8px; 
+        width: 100%;
+        
+        .inputLabel {
+            font-family: 'Work Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #4D6475;
+        }
+        
+        .inputContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+            
+            .icon {
+                position: absolute;
+                padding-left: 10px;
+            }
+            
+            .inputMoney {
+                flex : auto 1 1;
+                width : 100%;                
+                padding: 16px 16px 16px 38px;
+
+                border-radius: 4px;                
+                border: 1px solid #E9EEF2;
+
+                color: #595D7B;
+            
+                font-family: 'Rubik';
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28px;
+
+                &::placeholder {                    
+                    color:  rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+
+        .inputWithButtons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 12px;
+            border-radius: 4px;
+            gap: 16px;
+            
+            border: 1px solid #E9EEF2;
+
+            img {
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+
+                &:hover {
+                    border-radius: 5px;
+                    background-color: #F3F5FE;
+                }
+
+                &:active {
+                    border-radius: 5px;
+                    background-color: #E8EAF2;
+                }
+            }
+
+            .dateInputWrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .inputMonths {
+                    outline: none;
+                    border: 0;
+                    padding: 0;
+                    text-align: center;
+                    color: #595D7B;
+                    font-family: 'Rubik';
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+
+                label {
+                    font-family: 'Work Sans';
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #595D7B;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .rootContainer {     
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

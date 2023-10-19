@@ -1,0 +1,13 @@
+.rootContainer {
+    box-shadow: 0px 16px 32px 0px #1E2A3214;
+    padding: 32px 40px;
+    background-color: #FFF;
+    gap: 32px;
+    display: grid;
+}
+
+@media (max-width: 450px) {
+    .rootContainer {     
+        padding: 32px 24px;
+    }
+}

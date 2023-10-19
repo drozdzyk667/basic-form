@@ -1,0 +1,16 @@
+.rootContainer {
+    width: 600px;
+    margin: auto auto;
+    margin-top: 144px;
+    box-shadow: 0px 16px 32px 0px #1E2A3214;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (max-width: 450px) {
+    .rootContainer {
+        margin: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+}

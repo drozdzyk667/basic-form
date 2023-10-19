@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+.rootContainer {
+    display: flex;
+    flex-direction: row;       
+    gap: 8px;
+
+    .buttonContainer {
+        padding: 8px;
+        width: 100%;
+
+        .buttonDefault {
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 16px 24px 16px 24px;
+            font-size: 16px;
+            line-height: 20px;
+            font-family: 'Work Sans';
+            font-weight: 600;
+            width: inherit;
+            border: 1px solid;
+        }
+        
+        .cancelButton {
+            color: linear-gradient(0deg, #595D7B, #595D7B), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+            border-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #595D7B, #595D7B);
+            background-color: #FFF;
+
+            &:hover {
+                background-color: rgba(178, 167, 244, 0.1);
+            }
+
+            &:active {
+                background-color: rgba(178, 167, 244, 0.25);
+            }
+        }
+        
+        .continueButton {
+            background: #423C66;
+            border-color: #423C66;
+            color: #FFF;
+
+            &:hover {
+                background-color: rgba(100, 93, 147, 1);
+            }
+
+            &:active {
+                background-color: rgba(36, 30, 71, 1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .rootContainer {    
+        .buttonContainer:nth-child(1) {     
+            display: none;
+        }
+    }
+}
